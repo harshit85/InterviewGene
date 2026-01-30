@@ -1,0 +1,89 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /resume-service
+
+spring:
+  application:
+    name: resume-service
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/interview_platform_resume
+    username: ${DB_USERNAME:interview_user}
+    password: ${DB_PASSWORD:interview_pass}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+      leak-detection-threshold: 60000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        use_sql_comments: true
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+
+  cloud:
+    aws:
+      credentials:
+        access-key: ${AWS_ACCESS_KEY_ID:}
+        secret-key: ${AWS_SECRET_ACCESS_KEY:}
+      region:
+        static: ${AWS_REGION:us-east-1}
+      s3:
+        bucket: ${S3_BUCKET_NAME:interview-platform-resumes}
+
+logging:
+  level:
+    com.interviewgene: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+
+# Resume Service specific configuration
+resume:
+  file:
+    supported-formats: pdf,doc,docx
+    max-size-mb: 10
+    storage:
+      type: s3
+      s3:
+        bucket: ${S3_BUCKET_NAME:interview-platform-resumes}
+        prefix: resumes/
+  parsing:
+    timeout-seconds: 30
+    retry-attempts: 3
+  analysis:
+    ai:
+      enabled: true
+      timeout-seconds: 60
+      model-version: claude-3-sonnet
+    batch-size: 10

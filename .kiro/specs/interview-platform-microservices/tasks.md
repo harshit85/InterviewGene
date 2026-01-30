@@ -45,13 +45,13 @@ This implementation plan converts the microservices design into discrete coding 
     - **Validates: Requirements 1.6**
 
 - [ ] 3. Implement Resume Service core functionality
-  - [ ] 3.1 Create Resume Service project structure and entities
+  - [x] 3.1 Create Resume Service project structure and entities
     - Set up Maven module with file processing dependencies
     - Create Resume, ResumeData, and ResumeAnalysis entities
     - Implement ResumeStatus enum and embedded classes
     - _Requirements: 2.1, 2.2_
 
-  - [ ] 3.2 Write property test for resume processing round trip
+  - [x] 3.2 Write property test for resume processing round trip
     - **Property 4: Resume Processing Round Trip**
     - **Validates: Requirements 2.1, 2.2**
 
