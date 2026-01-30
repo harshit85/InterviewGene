@@ -19,6 +19,13 @@
 
     <modules>
         <module>access-service</module>
+        <module>common</module>
+        <module>interview-service</module>
+        <module>resume-service</module>
+        <module>evaluation-service</module>
+        <module>question-service</module>
+        <module>user-service</module>
+        <module>analytics-service</module>
     </modules>
 
 </project>
