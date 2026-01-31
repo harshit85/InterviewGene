@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="added db changes">
-      <change afterPath="$PROJECT_DIR$/run_local.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup_env.sh" afterDir="false" />
+    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="added setup and web changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployables/resume-service/src/main/java/com/interviewgene/ResumeServiceMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <recent name="$PROJECT_DIR$/deployables/access-service/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InterviewWorkflowIntegrationTest">
+  <component name="RunManager" selected="Spring Boot.AccessServiceMain">
     <configuration name="AIIntegrationStandardizationPropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="common" />
       <extension name="coverage">
@@ -166,17 +166,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformResiliencePropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="common" />
+    <configuration name="AccessServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="access-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.AccessServiceMain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewgene.property.*" />
+          <option name="PATTERN" value="com.interviewgene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.interviewgene.property" />
-      <option name="MAIN_CLASS_NAME" value="com.interviewgene.property.PlatformResiliencePropertyTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -232,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AccessServiceMain" />
         <item itemvalue="JUnit.InterviewWorkflowIntegrationTest" />
         <item itemvalue="JUnit.DeploymentConsistencyPropertyTest" />
         <item itemvalue="JUnit.AIIntegrationStandardizationPropertyTest" />
         <item itemvalue="JUnit.DataStorageCompliancePropertyTest" />
-        <item itemvalue="JUnit.PlatformResiliencePropertyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763634773176</updated>
       <workItem from="1769809966128" duration="6832000" />
-      <workItem from="1769841314283" duration="10671000" />
+      <workItem from="1769841314283" duration="13128000" />
     </task>
     <task id="LOCAL-00001" summary="chnage done till 9">
       <option name="closed" value="true" />
@@ -306,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769889399661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added setup and web changes">
+      <option name="closed" value="true" />
+      <created>1769897551210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769897551210</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +323,8 @@
     <MESSAGE value="completed till tasks 13" />
     <MESSAGE value="comapleted all the tasks" />
     <MESSAGE value="added db changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added db changes" />
+    <MESSAGE value="added setup and web changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added setup and web changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -366,6 +373,11 @@
           <url>file://$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/config/JwtAuthFilter.java</url>
           <line>46</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene/controller/AuthController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
