@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="completed till tasks 13">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/access-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployables/interview-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployables/resume-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployables/resume-service/src/test/resources/application-test.yml" beforeDir="false" />
+    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="added db changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/analytics-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/analytics-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/evaluation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/evaluation-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/interview-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/interview-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/question-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/question-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/resume-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployables/resume-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763634773176</updated>
       <workItem from="1769809966128" duration="6832000" />
-      <workItem from="1769841314283" duration="5326000" />
+      <workItem from="1769841314283" duration="6958000" />
     </task>
     <task id="LOCAL-00001" summary="chnage done till 9">
       <option name="closed" value="true" />
@@ -279,7 +280,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769887362057</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comapleted all the tasks">
+      <option name="closed" value="true" />
+      <created>1769887716341</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769887716341</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added db changes">
+      <option name="closed" value="true" />
+      <created>1769888969797</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769888969797</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +305,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chnage done till 9" />
     <MESSAGE value="completed till tasks 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed till tasks 13" />
+    <MESSAGE value="comapleted all the tasks" />
+    <MESSAGE value="added db changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added db changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
