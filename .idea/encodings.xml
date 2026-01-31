@@ -3,8 +3,17 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/deployables/access-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/deployables/access-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/analytics-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/evaluation-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/interview-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/question-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/resume-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/deployables/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/deployables/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/deployables/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

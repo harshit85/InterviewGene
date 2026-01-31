@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="" />
+    <list default="true" id="0e10d62a-aefd-4a1f-aac8-13e905ed3917" name="Changes" comment="completed till tasks 13">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/access-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/interview-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/resume-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployables/resume-service/src/test/resources/application-test.yml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="190" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,6 +26,13 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -31,17 +48,53 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AccessServiceMain.executor": "Debug",
+    "JUnit.AIIntegrationStandardizationPropertyTest.executor": "Run",
+    "JUnit.AnalyticsDataAggregationPropertyTest.executor": "Run",
+    "JUnit.DataStorageCompliancePropertyTest.executor": "Run",
+    "JUnit.DeploymentConsistencyPropertyTest.executor": "Run",
+    "JUnit.HistoricalAnalysisConsistencyPropertyTest.executor": "Run",
+    "JUnit.InterviewWorkflowIntegrationTest.executor": "Run",
+    "JUnit.PlatformResiliencePropertyTest.executor": "Run",
+    "JUnit.QuestionCategorizationPropertyTest.executor": "Run",
+    "JUnit.QuestionIntegrityPropertyTest.executor": "Run",
+    "JUnit.QuestionSearchPropertyTest.executor": "Run",
+    "JUnit.RealTimeMetricsAccuracyPropertyTest.executor": "Run",
+    "JUnit.ServiceCommunicationStandardPropertyTest.executor": "Run",
+    "JUnit.UserDataCompletenessPropertyTest.executor": "Run",
+    "JUnit.UserPreferencePersistencePropertyTest.executor": "Run",
+    "JUnit.UserProfileSeparationPropertyTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/harshit.bajpai/itenterviewbot/InterviewGene",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/harshitbajpai/merchandising/interviewgene/deployables/access-service/src/main/java/com/interviewgene/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1772445626477" />
+    <option name="spentUsd" value="0.0069664996" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/deployables/access-service/src/main/java/com/interviewgene" />
@@ -49,26 +102,148 @@
       <recent name="$PROJECT_DIR$/deployables/access-service/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AccessServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewgene.AccessServiceMain" />
-      <module name="access-service" />
-      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=local -Dspring.config.location=file:access-service.yml" />
+  <component name="RunManager" selected="JUnit.InterviewWorkflowIntegrationTest">
+    <configuration name="AIIntegrationStandardizationPropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.interviewgene.*" />
+          <option name="PATTERN" value="com.interviewgene.property.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.interviewgene.property" />
+      <option name="MAIN_CLASS_NAME" value="com.interviewgene.property.AIIntegrationStandardizationPropertyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataStorageCompliancePropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewgene.property.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interviewgene.property" />
+      <option name="MAIN_CLASS_NAME" value="com.interviewgene.property.DataStorageCompliancePropertyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeploymentConsistencyPropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewgene.property.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interviewgene.property" />
+      <option name="MAIN_CLASS_NAME" value="com.interviewgene.property.DeploymentConsistencyPropertyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterviewWorkflowIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="interview-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewgene.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interviewgene.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.interviewgene.integration.InterviewWorkflowIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformResiliencePropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewgene.property.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interviewgene.property" />
+      <option name="MAIN_CLASS_NAME" value="com.interviewgene.property.PlatformResiliencePropertyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyticsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="analytics-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.AnalyticsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.discovery.DiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvaluationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="evaluation-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.EvaluationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterviewServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="interview-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.InterviewServiceMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="question-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.QuestionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.interviewgene.UserServiceMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AccessServiceMain" />
+        <item itemvalue="JUnit.InterviewWorkflowIntegrationTest" />
+        <item itemvalue="JUnit.DeploymentConsistencyPropertyTest" />
+        <item itemvalue="JUnit.AIIntegrationStandardizationPropertyTest" />
+        <item itemvalue="JUnit.DataStorageCompliancePropertyTest" />
+        <item itemvalue="JUnit.PlatformResiliencePropertyTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,8 +252,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763634773176</updated>
+      <workItem from="1769809966128" duration="6832000" />
+      <workItem from="1769841314283" duration="5326000" />
     </task>
+    <task id="LOCAL-00001" summary="chnage done till 9">
+      <option name="closed" value="true" />
+      <created>1769813081839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769813081839</updated>
+    </task>
+    <task id="LOCAL-00002" summary="completed till tasks 13">
+      <option name="closed" value="true" />
+      <created>1769886373428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769886373428</updated>
+    </task>
+    <task id="LOCAL-00003" summary="completed till tasks 13">
+      <option name="closed" value="true" />
+      <created>1769887362057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769887362057</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chnage done till 9" />
+    <MESSAGE value="completed till tasks 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed till tasks 13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

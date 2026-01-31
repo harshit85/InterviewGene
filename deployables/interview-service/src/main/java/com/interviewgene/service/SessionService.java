@@ -8,6 +8,9 @@ import com.interviewgene.dto.SessionUpdateRequest;
 import com.interviewgene.model.InterviewSession;
 import com.interviewgene.model.SessionStatus;
 import com.interviewgene.repository.SessionRepository;
+import com.interviewgene.client.UserServiceClient;
+import com.interviewgene.event.SessionEventProducer;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -31,15 +34,27 @@ import java.util.stream.Collectors;
 public class SessionService {
 
     private final SessionRepository sessionRepository;
+    private final UserServiceClient userServiceClient;
+    private final SessionEventProducer sessionEventProducer;
 
     /**
      * Create a new interview session
      */
+    @CircuitBreaker(name = "userService", fallbackMethod = "fallbackCreateSession")
     public SessionResponse createSession(SessionCreateRequest request) {
         log.info("Creating new session for interviewer: {} and candidate: {}", 
                 request.getInterviewerId(), request.getCandidateId());
 
         validateCreateRequest(request);
+
+        // Verify users exist
+        try {
+            userServiceClient.getUser(request.getInterviewerId().toString());
+            userServiceClient.getUser(request.getCandidateId().toString());
+        } catch (Exception e) {
+            log.error("User validation failed: {}", e.getMessage());
+            throw new ValidationException("Interviewer or Candidate not found");
+        }
 
         InterviewSession session = InterviewSession.builder()
                 .interviewerId(request.getInterviewerId())
@@ -175,6 +190,18 @@ public class SessionService {
         InterviewSession updatedSession = sessionRepository.save(session);
 
         log.info("Ended session: {}", sessionId);
+
+        // Emit event for analytics
+        try {
+            sessionEventProducer.sendSessionCompletedEvent(
+                    updatedSession.getSessionId(),
+                    updatedSession.getCandidateId(),
+                    new HashMap<>(updatedSession.getMetadata())
+            );
+        } catch (Exception e) {
+            log.error("Failed to send session completed event: {}", e.getMessage());
+        }
+
         return mapToResponse(updatedSession);
     }
 
@@ -274,5 +301,24 @@ public class SessionService {
                 .isActive(session.isActive())
                 .isCompleted(session.isCompleted())
                 .build();
+    }
+
+    /**
+     * Fallback method for createSession when userService is unavailable
+     */
+    public SessionResponse fallbackCreateSession(SessionCreateRequest request, Exception e) {
+        log.warn("User Service is unavailable, creating session without validation. Error: {}", e.getMessage());
+        
+        InterviewSession session = InterviewSession.builder()
+                .interviewerId(request.getInterviewerId())
+                .candidateId(request.getCandidateId())
+                .scheduledTime(request.getScheduledTime())
+                .sessionType(request.getSessionType())
+                .status(SessionStatus.SCHEDULED)
+                .metadata(request.getMetadata() != null ? request.getMetadata() : new HashMap<>())
+                .build();
+
+        InterviewSession savedSession = sessionRepository.save(session);
+        return mapToResponse(savedSession);
     }
 }
